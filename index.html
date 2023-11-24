@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <section>
+        <article>
+            <h1>AGE CALCULATOR</h1>
+
+            <form id="form">
+                <label for="dia">Day</label><br>
+                <input type="number" name="dia" id="dia" placeholder="00"> <br>
+
+                <label for="mes">Month</label> <br>
+                <input type="number" name="mes" id="mes" placeholder="00"> <br>
+
+                <label for="ano">Year</label> <br>
+                <input type="number" name="ano" id="ano" placeholder="0000"> <br>
+
+                <input type="button" value="Calculate" onclick="clicar()" id="bt">
+
+                
+            </form>
+            <div id="res">
+                <h2><span id="ar">0</span> years </h2>
+                <h2><span id="mr">  0</span> months </h2>
+                <h2><span id="dr">0</span> days </h2>
+            </div>
+        </article>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
