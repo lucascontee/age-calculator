@@ -28,8 +28,26 @@ function clicar(){
         var resm = m - mes
 
         if(d < dia){
-            resm = m - mes - 1
-            resd = 30 + d - dia
+            if(m == 1 || m == 3 || m == 5 || m == 7 || m == 8 || m == 10 || m == 12){
+                resm = m - mes - 1
+                resd = 31 + d - dia
+            } else if(m == 2){
+                resm = m - mes - 1
+                resd = 28 + d - dia
+            } else{
+                resm = m - mes - 1
+                resd = 30 + d - dia
+            }
+            
+        }
+
+        if(m < mes){
+            resy = a - ano - 1
+            resm = 12 - mes + m           
+        }
+
+        if(m == mes){
+            resm = 0
         }
 
         mr.innerHTML = resm
