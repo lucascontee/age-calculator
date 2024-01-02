@@ -58,8 +58,12 @@ function clicar(){
             mr.innerHTML = "0" + resm
         }
 
-        if(resd < 10)
-        dr.innerHTML = "0"+resd
+        if(resd < 10){
+            dr.innerHTML = "0"+resd
+        }
+        if(resy < 10){
+            ar.innerHTML = "0" + resy
+        }
         
     }
 }
